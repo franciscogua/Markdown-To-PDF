@@ -1,0 +1,74 @@
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.export-button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.export-button:hover {
+  background-color: #0056b3;
+}
+
+.editor-layout {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.editor-pane,
+.preview-pane {
+  width: 50%;
+  height: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.editor-pane {
+  border-right: 1px solid #333;
+}
+
+.editor-textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #242424;
+  color: #f0f0f0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  resize: none;
+}
+
+.editor-textarea:focus {
+  outline: none;
+}
+
+.preview-content {
+  width: 100%;
+  height: 100%;
+}
