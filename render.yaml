@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: markdown-pdf-backend
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: backend/Dockerfile
