@@ -130,7 +130,8 @@ Esta aplicación te permite convertir tus notas de **Markdown** a un archivo **P
     `;
 
     try {
-      const response = await fetch("http://localhost:8080/api/generate-pdf", {
+      const apiUrl = `${import.meta.env.VITE_API_BASE_URL}/api/generate-pdf`;
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
